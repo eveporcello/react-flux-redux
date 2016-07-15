@@ -21,7 +21,7 @@ ES6 Samples
 ----------
 
 #### Transpiling ES6
-* transpiling locally ([demo](http://rawgit.com/eveporcello/react-flux-redux/inline-transpiling.html)
+* transpiling locally [demo](https://github.com/eveporcello/react-flux-redux/blob/master/inline-transpiling.html)
 
 #### Objects and Arrays
 * destructuring assignment ([1](http://jsbin.com/jukokaf/1/edit?js,console),[2](http://jsbin.com/jukokaf/2/edit?js,console),[3](http://jsbin.com/jukokaf/3/edit?js,console),[4](http://jsbin.com/jukokaf/4/edit?js,console),[5](http://jsbin.com/jukokaf/5/edit?js,console))
@@ -33,4 +33,6 @@ Flux
 * [Flux Documentation] (https://facebook.github.io/flux/docs/overview.html)
 
 Redux 
+------
 * [Redux Documentation] (http://redux.js.org)
+* Start files are in Redux Folder
