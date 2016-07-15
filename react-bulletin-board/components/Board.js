@@ -1,3 +1,6 @@
+import React from 'react'
+import Note from './Note'
+
 class Board extends React.Component {
 
     constructor() {
@@ -55,17 +58,17 @@ class Board extends React.Component {
 
     eachNote(note, i) {
         return <Note key={note.id}
-        index={i}
-        onChange={this.update}
-        onRemove={this.remove}>{note.note}</Note>
+                     index={i}
+                     onChange={this.update}
+                     onRemove={this.remove}>{note.note}</Note>
     }
 
     render() {
         return <div className="board">
             {this.state.notes.map(this.eachNote)}
-    <button className="btn btn-sm btn-success glyphicon glyphicon-plus"
-        onClick={this.add.bind(null, "New Note")}/>
-    </div>
+            <button className="btn btn-sm btn-success glyphicon glyphicon-plus"
+                    onClick={this.add.bind(null, "New Note")}/>
+        </div>
     }
 
 }

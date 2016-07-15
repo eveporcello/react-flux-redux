@@ -1,4 +1,8 @@
+import React from 'react'
+import $ from 'jquery'
+
 class Note extends React.Component {
+
     constructor() {
         super();
 
@@ -18,10 +22,6 @@ class Note extends React.Component {
             top: this.randomBetween(0, window.innerHeight - 150, 'px'),
             transform: 'rotate(' + this.randomBetween(-15, 15, 'deg') + ')'
         };
-    }
-
-    componentDidMount() {
-        $(React.findDOMNode(this)).draggable();
     }
 
     componentDidUpdate() {
@@ -57,26 +57,26 @@ class Note extends React.Component {
 
     renderForm() {
         return <div className="note"
-        style={this.style}>
-    <textarea ref="newText" defaultValue={this.props.children}
-        className="form-control"></textarea>
+                    style={this.style}>
+            <textarea ref="newText" defaultValue={this.props.children}
+                      className="form-control"></textarea>
             <button onClick={this.save}
-        className="btn btn-success btn-sm glyphicon glyphicon-floppy-disk"/>
-            </div>
+                    className="btn btn-success btn-sm glyphicon glyphicon-floppy-disk"/>
+        </div>
     }
 
     renderDisplay() {
         return <div className="note"
-        style={this.style}
-        onDoubleClick={this.edit}>
-    <p>{this.props.children}</p>
-        <span>
-        <button onClick={this.edit}
-        className="btn btn-primary btn-sm glyphicon glyphicon-pencil"/>
-            <button onClick={this.remove}
-        className="btn btn-danger btn-sm glyphicon glyphicon-trash"/>
+                    style={this.style}
+                    onDoubleClick={this.edit}>
+            <p>{this.props.children}</p>
+            <span>
+                <button onClick={this.edit}
+                        className="btn btn-primary btn-sm glyphicon glyphicon-pencil"/>
+                <button onClick={this.remove}
+                        className="btn btn-danger btn-sm glyphicon glyphicon-trash"/>
             </span>
-            </div>
+        </div>
     }
 
     render() {
