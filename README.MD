@@ -36,3 +36,4 @@ Redux
 ------
 * [Redux Documentation] (http://redux.js.org)
 * Start files are in Redux Folder
+* Redux Color Wall
