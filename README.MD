@@ -37,3 +37,4 @@ Redux
 * [Redux Documentation] (http://redux.js.org)
 * Start files are in Redux Folder
 * [Redux Color Wall] (https://github.com/moontahoe/redux-color-wall)
+* [Design Principles] (https://facebook.github.io/react/contributing/design-principles.html)
